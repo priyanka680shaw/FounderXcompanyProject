@@ -1,0 +1,41 @@
+.mainContainer {
+    width : 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logoSearchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(69, 67, 67); 
+    gap: 1rem;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.searchInput{
+   outline: none;
+   width: 150px;
+}
+
+.menuListItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menuListItemsli {
+    padding: 0px 10px;
+}
