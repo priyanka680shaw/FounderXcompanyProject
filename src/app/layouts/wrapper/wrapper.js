@@ -2,7 +2,7 @@
 export default function Wrapper({ children , style }){
   return(
     <>
-        <div style={{...style , width : "95%"}}>
+        <div style={{...style , width : "85%"}}>
           {children}
         </div>
     </>

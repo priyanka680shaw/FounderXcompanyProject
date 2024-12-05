@@ -1,33 +1,33 @@
 import Wrapper from "../../wrapper/wrapper";
 import headerTwoStyle from './headerTwo.module.css';
+import logoImage from "../../../images/logo.png"
+import Image from "next/image";
 //importing search icon from react icons
 import { CiSearch } from "react-icons/ci";
 export default function HeaderTwo() {
 
-    const menuLists = ["Home" , "Coronavireus" , "News" , "markets" , "Mutual Funds" , "Commodities" , "Insurance" , "Video" ,  "Podcast" , "Personal Finance" , "Portfolio" , "Forum" , "Be a Pro" , "Earth 360" , "Easybiz" , "Live TV"]
     return (
-        <Wrapper style={{ border: "2px solid green" , margin : "10px" }}>
+        <>
+            <Wrapper>
             <div className={headerTwoStyle.mainContainer}>
-                <div className={headerTwoStyle.logoSearchBar}>
-                    <div className="logo"><h1>FounderXLOgo</h1></div>
-                    <div className={headerTwoStyle.searchBar}>
-                        <CiSearch className=""/>
-                        <input type="text" placeholder="search ..." className={headerTwoStyle.searchInput}/>
+                    <div className="logo">
+                        <Image src={logoImage} alt="founderlogo" style={{cursor : "pointer"}}></Image>
                     </div>
-                </div>
-                <div className="menu">
-                    <ul className={headerTwoStyle.menuListItems}>
-                        {
-                           menuLists.map((items , index)=>{
-                            return(
-                                <li key={index} className= {headerTwoStyle.menuListItemsli}>{items}</li>
-                            )
-                           })
-                           
-                        }
-                    </ul>   
-                </div>
-            </div>
+                    <div className={headerTwoStyle.searchBar}>
+                        <input type="text" placeholder="Search  Stock , Quotes , News , Mutual Funds and more ..." className={headerTwoStyle.searchInput}/>
+                        <CiSearch style={{ strokeWidth : 1 ,  fontWeight: "bolder", fontSize: "20px"}} />
+                    </div>
+                    <div className="userAccess">
+                        <button className= {headerTwoStyle.btnStyle} style={{border : "2px solid black" ,  backgroundColor : "black"}}>Login</button>
+                        <button className= {headerTwoStyle.btnStyle} style={{border : "2px solid blue" , backgroundColor : "blue"}}>Singup</button>
+                        <button className= {headerTwoStyle.btnStyle} style={{border : "2px solid rgb(216,9,27)" ,  backgroundColor : "rgb(216,9,27)"}}>Suscribe</button>
+                    </div>
+            </div>           
+            <hr style={{ border: "1px solid rgb(218, 214, 214)", margin: "0px" , width : "100%" }} />
+            <hr style={{ border: "1px solid rgb(218, 214, 214)", margin: "2px 0px" , width : "100%" }} />
         </Wrapper>
+       
+        </>
+        
     );
 }
