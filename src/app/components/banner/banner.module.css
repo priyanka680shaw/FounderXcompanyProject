@@ -1,0 +1,30 @@
+.mainContainer{
+    width: 100%;
+    height: 450px;
+    /* border: 2px solid red; */
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContainer{
+    width: 55%;
+
+}
+
+
+/* rigth container */
+
+.righContainer{
+    width: 45%;
+    height: 450px;
+}
+
+.topdiv{
+  
+}
+
+.bottomdiv{
+    display: flex;
+    overflow: hidden;
+}
