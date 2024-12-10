@@ -28,3 +28,45 @@
     display: flex;
     overflow: hidden;
 }
+
+
+/* card Stling */
+
+.imgContainer{
+    width: "100%";  
+    position: "relative";
+    margin: 5px;
+    /* padding: 5px; */
+    overflow: hidden;
+}
+
+.mainImage{
+    /* object-fit: "cover" ;
+    object-position : "top-center" ; */
+    /* padding  :"5px" ; */
+    border-radius : "15px";
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 100%;
+
+}
+
+.mainImage:hover{
+   transform: scale(1.1);
+}
+.buttonType{
+    padding: 5px 10px;
+    display: block;
+    margin: 10px 0px ;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heading{
+    text-transform: uppercase;
+    display: inline;
+    background: black;
+    padding: 2px;
+    cursor: pointer;
+}
