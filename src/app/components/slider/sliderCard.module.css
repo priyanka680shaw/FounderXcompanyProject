@@ -1,6 +1,65 @@
-.sliderContainer{
+.wrapperStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContainer {
+    background-image: url("../../images/slider/sliderBg.png"); /* Public directory doesn't require relative paths */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 200px;
+    background-color: rgb(237, 232, 232);
+    margin: 10px 0px ;
+  }
+  
+  .mainContainer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  /* Slider card*/
+  .cardContainer{
+    width: 425px;
+    border: 2px solid red;
+  }
+
+  .innerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 2px solid green;
     
-    margin: 10px 0px;
-}
+  }
+
+  .imageContainer{
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: aqua;
+  }
+
+  .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .imgCaptionh3{
+    color : #F20E62;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .imgCaptionP{
+    color : #4B4C5F;
+  }
