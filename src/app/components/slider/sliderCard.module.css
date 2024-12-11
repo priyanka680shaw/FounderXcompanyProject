@@ -28,25 +28,24 @@
   /* Slider card*/
   .cardContainer{
     width: 425px;
-    border: 2px solid red;
   }
 
   .innerContainer{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    border: 2px solid green;
-    
+    /* border: 2px solid green; */
+    gap: 30px;
   }
 
   .imageContainer{
-    width: 125px;
-    height: 125px;
+    width: 35%;
+    height: 150px;
     cursor: pointer;
     border-radius: 50%;
     background-color: aqua;
+    flex-shrink: 0px;
   }
+
 
   .image{
     width: 100%;
@@ -54,12 +53,31 @@
     border-radius: 50%;
   }
 
+  .captioncContainer{
+    width: 65%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .figureCaption{
+    flex-grow: 1;
+  }
+
   .imgCaptionh3{
     color : #F20E62;
     font-weight: bold;
     margin-bottom: 10px;
+    cursor: pointer;
   }
 
   .imgCaptionP{
     color : #4B4C5F;
+    white-space: normal;
+    cursor: pointer;
+  }
+
+  .imgCaptionP:hover{
+    color : #F20E62;
   }
