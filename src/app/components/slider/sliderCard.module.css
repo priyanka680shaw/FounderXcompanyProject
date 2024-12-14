@@ -72,12 +72,14 @@
     cursor: pointer;
   }
 
-  .imgCaptionP{
-    color : #4B4C5F;
+  .imgCaptionP {
+    color: #4B4C5F;
     white-space: normal;
     cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for the color property */
   }
-
-  .imgCaptionP:hover{
-    color : #F20E62;
+  
+  .imgCaptionP:hover {
+    color: #F20E62; /* Color changes on hover */
   }
+  

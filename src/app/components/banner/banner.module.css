@@ -48,7 +48,7 @@
     cursor: pointer;
     transition: transform 0.3s ease;
     height: 100%;
-
+   
 }
 
 .mainImage:hover{
@@ -70,3 +70,6 @@
     padding: 2px;
     cursor: pointer;
 }
+
+/* responsive  */
+
