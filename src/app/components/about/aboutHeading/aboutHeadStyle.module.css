@@ -1,0 +1,8 @@
+.h1{
+    font-size: 30PX;
+}
+
+.hr{
+    border-top: 2px solid black;
+    margin: 5px;
+}

@@ -1,34 +1,40 @@
-import cardStyle from "./cardStyle.module.css"
-import Image from "next/image"
-import img from "../../../images/slider/slider.webp"
-export default function  Card(
-    {
-        mainContainerStyle , innerContainerStyle , imageContainer , textContainer, heading , para1 ,para2 , para3 
+import Card from "../maincard/card"
+
+export default function BigCard(){
+
+    const  mainContainerStyle = {
+        // backgroundColor : "red" , 
+        width : "450px",
+        height : "auto",
+        margin : "10px"
     }
-){
+
+    const innerContainerStyle = {
+        // backgroundColor : "green" , 
+        flexDirection : "column" ,
+        // padding : "20px",
+        justifyContain : "center"
+    }
+
+    const imageContainer ={
+        width : "100%",
+        height : "250px"
+    }
+
+    const textContainer ={
+        width : "100%",
+        padding : "10px 0px"
+    }
+    
+    const headingstyle = {
+        fontSize : "24px"
+    }
     return(
         <>
-            <div className= {cardStyle.mainContainer} style={{...mainContainerStyle}}>
-                <div className={cardStyle.innerContainer} style={{...innerContainerStyle}}>
-                    <figure className= {cardStyle.imageContainer}>
-                        <div  style={{...imageContainer}}>
-                            <Image src={img} alt = "bgImage" style={{width : "100%" , height : "100%"}}></Image>
-                        </div>
-                    </figure> 
-                    <figcaption className={cardStyle.textContainer} style={{...textContainer}}>
-                      
-                            <h1 className={cardStyle.heading}>Paytm Faces RBI Action Shakes Payments Bank, Raises User Concerns</h1>
-                            <p><span className= {cardStyle.para1Spaan}>by Foundrex  -</span>
-                            May 02, 2024</p>
-                            <p>Ayodhya Ram Mandir Celebration : Commemorating a Historic Milestone</p>
-                          
-                        
-                    </figcaption>
-                </div>
-            </div>
+         <Card  mainContainerStyle = {mainContainerStyle}  innerContainerStyle={innerContainerStyle} imageContainer = {imageContainer} textContainer ={textContainer} headingstyle={headingstyle} btnText = {"News"} heading={"Budget 2024 : Insights into Fiscal Projections a..."} para1={"May 04, 2024"} para2={"US Presidential Election 2024 : Predictions and Projections for the Next Leader"}/>
+
+         <Card  mainContainerStyle = {mainContainerStyle}  innerContainerStyle={innerContainerStyle} imageContainer = {imageContainer} textContainer ={textContainer} headingstyle={headingstyle} btnText = {"Global"} heading={"Budget 2024 : Insights into Fiscal Projections a..."}  para2={"US Presidential Election 2024 : Predictions and Projections for the Next Leader"}/>
+      
         </>
     )
 }
-
-
-//in this component you have to pass height aand width aND SPEECIFIC STYLE FOR THE CONTAINER USING PROPS 

@@ -1,0 +1,58 @@
+.mainContainer{
+    /* border: 2px solid red; */
+}
+
+.innerContainer{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.button1{
+    position: absolute;
+    padding: 10px;
+    background-color: #DC3545;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+.button2{
+    color: #DC3545;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.textContainer{
+    width: 50%;
+}
+
+.heading{
+    font-weight: bolder;
+    /* font-size: 24px; */
+    font-family:  Arial Helvetica sans-serif;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.heading:hover{
+    color: #F71735;
+
+}
+.para1Spaan{
+    font-weight: bold;
+    margin-right:  20px ;
+    cursor: pointer;
+}
+
+.para{
+    font-size: 14px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
