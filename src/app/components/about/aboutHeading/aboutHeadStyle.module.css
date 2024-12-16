@@ -1,8 +1,35 @@
+.container{
+    width: 100%;
+    /* height: 200px; */
+    border: 3px solid rgb(191, 20, 20);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .h1{
-    font-size: 30PX;
+    font-size: 32PX;
+    color: #0B0C26;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bullet {
+    width: 14px;               /* Smaller size for bullets */
+    height: 10px;
+    border-radius: 100%;        /* Perfect circle */
+    background-color: #EE6E25;  /* Use black for bullet points */
+    display: inline-block;     /* Ensures it lines up properly */
+}
+
+.hrContainer{
+    width: 100%;
 }
 
 .hr{
-    border-top: 2px solid black;
-    margin: 5px;
+    border: 1px solid black;
+    margin: 3px;
+    /* width: 100%; */
 }
