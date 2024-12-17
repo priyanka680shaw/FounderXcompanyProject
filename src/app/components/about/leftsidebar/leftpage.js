@@ -6,7 +6,7 @@ import Finance from "../aboutSections/finance/finance"
 export default function LeftSideBar(){
     return(
         <>
-            <div className=" w-[65%] h-[auto]" style={{ padding  :"5px"}}>
+            <div className=" w-[65%] h-[auto]" style={{border : "2px solid red" , padding  :"5px"}}>
             {/* <AboutHeading heading={"heading"}/> */}
             <News/>
             <Markets/>
