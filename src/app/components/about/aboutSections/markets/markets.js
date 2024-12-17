@@ -1,9 +1,9 @@
 import AboutHeading from "../../aboutHeading/aboutHeading"
-import newsStyle from "./newsStyle.module.css"
+import marketStyle from "./marketStyle.module.css"
 import BigCard from "@/app/components/card/bigCard/bigCard"
 import SmallCard from "@/app/components/card/smallCard/smallcard"
 import img from "../../../../images/banner/banner3.webp"
-export default function News(){
+export default function Markets(){
 
     const smallcardData = [
         {
@@ -29,12 +29,13 @@ export default function News(){
     ]
     return(
         <>
-            <AboutHeading heading={"News"}/>
-            <div className={newsStyle.mainContainer}>
-                <div className={newsStyle.leftBox}>
+            <AboutHeading heading={"Markets"}/>
+            <div className={marketStyle.mainContainer}>
+                <div className={marketStyle.bigCards}>
                     <BigCard image ={img}/>
+                    {/* <BigCard image ={img}/> */}
                 </div>
-                <div className={newsStyle.rightBox}>
+                <div className={marketStyle.smallCards}>
                     {
                         smallcardData.map((items , index)=>{
                             return(

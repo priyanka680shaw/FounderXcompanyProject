@@ -1,34 +1,31 @@
 import Card from "../maincard/card"
-export default function SmallCard(){
+export default function SmallCard({heading ,para2 , image , flexDirection , mainContainerWidth , imageContainerWidth}){
 
     const  mainContainerStyle = {
-        // backgroundColor : "red" , 
-        width : "450px",
+        width : mainContainerWidth ?  mainContainerWidth : "400px",
         height : "auto",
-        margin : "10px"
+        marginBottom : "18px"
     }
 
     const innerContainerStyle = {
-        // backgroundColor : "green" , 
-        // flexDirection : "column" ,
-        // padding : "20px",
-        justifyContain : "center"
+        justifyContain : "center",
+
+        alignItems: "center",
+        flexDirection : flexDirection,
     }
 
     const imageContainer ={
-        width : "200px",
-        // height : "250px"
+        width  : imageContainerWidth ?  imageContainerWidth : "150px",
     }
 
     const textContainer ={
         width : "100%",
-        padding : "10px 0px"
+        padding : "10px 10px"
     }
 
     return(
         <>
-        <p>calling small cards</p>
-                <Card btnTextLable={"Globle"} mainContainerStyle = {mainContainerStyle}  innerContainerStyle={innerContainerStyle} imageContainer = {imageContainer} textContainer ={textContainer}/>
-        </>
+            <Card  mainContainerStyle = {mainContainerStyle}  innerContainerStyle={innerContainerStyle} imageContainer = {imageContainer} textContainer ={textContainer} heading={heading} para2={para2} image={image}/>
+            </>
     )
 }

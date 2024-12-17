@@ -6,7 +6,7 @@ export default function  Card(
         mainContainerStyle , innerContainerStyle , imageContainer , textContainer, headingstyle , image , heading , para1 ,para2 , btnText , btnTextLable
     }
 ){
-    console.log(btnText , heading , para1)
+    // console.log(btnText , heading , para1)
 
     return(
 
@@ -16,7 +16,7 @@ export default function  Card(
                 <div className={cardStyle.innerContainer} style={{...innerContainerStyle}}>
                     <figure className= {cardStyle.imageContainer}>
                         <div  style={{...imageContainer}}>
-                            <Image src={img} alt = "bgImage" style={{width : "100%" , height : "100%" , borderRadius : "15px"}}></Image>
+                            <Image src={image} alt = "bgImage" style={{width : "100%" , height : "100%" , borderRadius : "5px"}}></Image>
                            {
                             btnText ? <button className={cardStyle.button1}>{btnText}</button>  : null
                            } 
@@ -29,7 +29,7 @@ export default function  Card(
                       
                             <h1 className={cardStyle.heading} style={{...headingstyle}}>{heading}</h1>
                             {
-                                para1 ? <p className={cardStyle.para}><span className= {cardStyle.para1Spaan}>by Foundrex  -</span>{para1}</p>  :null
+                                para1 ? <p className={cardStyle.para}><span className= {cardStyle.para1Spaan}>By Foundrex  -</span>{para1}</p>  :null
                             }
                             <p className={cardStyle.para}>{para2}</p>
                           

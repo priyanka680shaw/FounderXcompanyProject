@@ -2,6 +2,7 @@ import HeaderMainPage from "./layouts/header/headermainpage";
 import Bannerpage from "./components/banner/bannerpage";
 import SliderPage from "./components/slider/slider";
 import About from "./components/about/about";
+import Footer from "./layouts/footer/footer";
 export default function Home() {
    return (
     <>
@@ -9,9 +10,8 @@ export default function Home() {
       <HeaderMainPage/>
       <Bannerpage/>
       <SliderPage/>
-      {/* <BigCard/>
-      <SmallCard/> */}
       <About/>
+      <Footer/>
      
     </div>
     </>

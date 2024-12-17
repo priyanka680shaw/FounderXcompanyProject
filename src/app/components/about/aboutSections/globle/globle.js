@@ -1,44 +1,55 @@
 import AboutHeading from "../../aboutHeading/aboutHeading"
-import newsStyle from "./newsStyle.module.css"
+import globleStyle from "./globleStyle.module.css"
 import BigCard from "@/app/components/card/bigCard/bigCard"
 import SmallCard from "@/app/components/card/smallCard/smallcard"
 import img from "../../../../images/banner/banner3.webp"
-export default function News(){
+export default function Global(){
 
     const smallcardData = [
         {
             image : img,
             heading : "Budget 2024 : Insights into Fiscal Projections a...",
-            para2 : "May 04, 2024"
+           
         },
         {
             image : img,
             heading : "Budget 2024 : Insights into Fiscal Projections a...",
-            para2 : "May 04, 2024"
+           
         },
         {
             image : img,
             heading : "Budget 2024 : Insights into Fiscal Projections a...",
-            para2 : "May 04, 2024"
+           
         },
         {
             image : img,
             heading : "Budget 2024 : Insights into Fiscal Projections a...",
-            para2 : "May 04, 2024"
+           
+        },
+        {
+            image : img,
+            heading : "Budget 2024 : Insights into Fiscal Projections a...",
+           
+        },
+        {
+            image : img,
+            heading : "Budget 2024 : Insights into Fiscal Projections a...",
+           
         }
     ]
     return(
         <>
-            <AboutHeading heading={"News"}/>
-            <div className={newsStyle.mainContainer}>
-                <div className={newsStyle.leftBox}>
+            <AboutHeading heading={"Globle"}/>
+            <div className={globleStyle.mainContainer}>
+                <div className={globleStyle.bigCards}>
+                    <BigCard image ={img}/>
                     <BigCard image ={img}/>
                 </div>
-                <div className={newsStyle.rightBox}>
+                <div className={globleStyle.smallCards}>
                     {
                         smallcardData.map((items , index)=>{
                             return(
-                                <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img}/>
+                                <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img} flexDirection={"column"} imageContainerWidth ={"200px"} mainContainerWidth ={"250px"}/>
                             )
                            
                         })

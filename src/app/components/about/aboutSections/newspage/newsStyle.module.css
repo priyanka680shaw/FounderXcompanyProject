@@ -1,0 +1,17 @@
+.mainContainer{
+    width: 100%;
+    height:  500px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 15px;
+}
+
+.leftBox{
+    width: 50%;
+    height:  500px;
+}
+
+.rightBox{
+    width: 50%;
+    height:  500px;
+}
