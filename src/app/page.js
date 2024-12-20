@@ -3,7 +3,7 @@ import Bannerpage from "./components/banner/bannerpage";
 import SliderPage from "./components/slider/slider";
 import About from "./components/about/about";
 import Footer from "./layouts/footer/footer";
-import Mostpopular from "./components/about/mostPopular/mostpopular";
+import Navbar from "./components/about/aboutSections/navbar/nanvbar";
 export default function Home() {
    return (
     <>
@@ -12,8 +12,9 @@ export default function Home() {
       <Bannerpage/>
       <SliderPage/>
       <About/>
-    <Mostpopular/>
+
       <Footer/>
+      <Navbar/>
      
     </div>
     </>

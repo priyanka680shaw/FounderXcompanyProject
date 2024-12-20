@@ -4,18 +4,20 @@ export default function FollowMe(){
     const containerStyle = {
         width : "100%",
         height :"auto" ,
-        border : "2px solid green",
+        // border : "2px solid green",
     }
 
     const cardContainer = {
         width : "100%" , 
         height : "auto" , 
-        border : "2px solid red",
         display  :"flex" ,
         flexWrap : "wrap",
         justifyContent : "center"
     }
 
+
+
+    
     const socialmediaData = [
         {
             logo : "logo",

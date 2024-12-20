@@ -3,7 +3,7 @@ import Image from "next/image"
 import img from "../../../images/slider/slider.webp"
 export default function  Card(
     {
-        mainContainerStyle , innerContainerStyle , imageContainer , textContainer, headingstyle , image , heading , para1 ,para2 , btnText , btnTextLable
+        mainContainerStyle , innerContainerStyle , textContainer, headingstyle , image , heading , para1 ,para2 , btnText , btnTextLable
     }
 ){
     // console.log(btnText , heading , para1)
@@ -15,15 +15,13 @@ export default function  Card(
             <div className= {cardStyle.mainContainer} style={{...mainContainerStyle}}>
                 <div className={cardStyle.innerContainer} style={{...innerContainerStyle}}>
                     <figure className= {cardStyle.imageContainer}>
-                        <div  style={{...imageContainer}}>
                             <Image src={image} alt = "bgImage" style={{width : "100%" , height : "100%" , borderRadius : "5px"}}></Image>
                            {
                             btnText ? <button className={cardStyle.button1}>{btnText}</button>  : null
                            } 
                            {
                             btnTextLable ? <button className={cardStyle.button2}>{btnTextLable}</button> : null
-                           }
-                        </div>
+                            }
                     </figure> 
                     <figcaption className={cardStyle.textContainer} style={{...textContainer}}>
                       

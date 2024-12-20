@@ -4,8 +4,8 @@ export default function SocialMediacard({bgColor  , logo , followers , socialIco
         backgroundColor : bgColor , 
         padding  :"15px" ,
         display :"flex",
-        justifyContent : "space-between", 
-        margin : "10px",
+        justifyContent : "center"
+,       margin : "10px",
         gap  : "12px",
         color : "white"
     }

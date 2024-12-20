@@ -3,6 +3,8 @@ import News from "../aboutSections/newspage/news"
 import Markets from "../aboutSections/markets/markets"
 import Global from "../aboutSections/globle/globle"
 import Finance from "../aboutSections/finance/finance"
+import TopGainers from "../aboutSections/gainersCard/topgainers/topgainers"
+import TopLossers from "../aboutSections/gainersCard/toplossers/topLossers"
 export default function LeftSideBar(){
     return(
         <>

@@ -7,15 +7,13 @@ export default function Mostpopular(){
     const containerStyle = {
         width : "100%",
         height :"auto" ,
-        border : "2px solid green",
     }
 
     const cardContainer = {
         width : "100%",
         height :"auto" ,
         display  :"flex",
-        justifyCopntent  :"center",
-        border : "2px solid green",
+        justifyContent  :"center",
     }
 
 
