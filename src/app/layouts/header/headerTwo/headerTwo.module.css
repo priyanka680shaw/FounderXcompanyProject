@@ -1,14 +1,14 @@
 .mainContainer {
-    width : 100%;
+    width: 100%;
     padding: 15px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*      border: 2px solid black; */
+    /* border: 2px solid black; */
 }
 
-.searchIcon{
+.searchIcon {
     font-weight: bold;
     padding: 10px 20px;
 }
@@ -17,59 +17,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid rgb(69, 67, 67); 
-    /* color  : rgb(218, 214, 214) */
+    border: 2px solid rgb(69, 67, 67);
+    /* color: rgb(218, 214, 214); */
     gap: 1rem;
     font-size: 12px;
     padding: 5px 20px;
     border-radius: 30px;
 }
 
-.searchInput{
+.searchInput {
     outline: none;
     width: 550px;
-    padding: 8px ;
+    padding: 8px;
     font-size: small;
     transition: border-color 0.3s ease-in;
 }
 
-.searchB.searchBar:focus{
+/* Correct focus selector */
+.searchBar:focus-within {
     border-color: red;
 }
 
-.btnStyle{
+.btnStyle {
     /* border: 2px solid black; */
     padding: 5px 15px;
     margin: 0px 5px;
-    border-radius: 10px; 
+    border-radius: 10px;
     color: white;
     font-weight: bold;
-    font-size: 15p;
+    font-size: 15px; /* Fixed unit */
 }
 
-.hrStyle{
+.hrStyle {
     border: none; /* Remove default border */
     border-top: 2px solid #000; /* Add a solid black line */
     margin: 20px 0; /* Add spacing above and below */
-
-}
-/* .menuListItems {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
+/* Fixed .menuListItemsli block */
 .menuListItemsli {
     padding: 0px 4px;
     font-size: 10px;
     font-weight: 700;
-    font-size: small;
     cursor: pointer;
     /* text-transform: capitalize; */
+}
 
-
-/*.menuListItemsli:hover{
+.menuListItemsli:hover {
     text-decoration: underline;
     color: blue;
-} */
+}
+
+/* Fixed media query */
+@media only screen and (max-width: 321px) {
+    .mainContainer {
+       padding: 0px;
+       /* display: none; */
+    }
+}
