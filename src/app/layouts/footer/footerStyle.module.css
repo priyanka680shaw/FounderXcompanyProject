@@ -1,0 +1,42 @@
+.div1Container{
+    border : 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.div1SocilIcons{
+    display: flex;
+    gap  :10px
+}
+
+.div2Container{
+    border: 2px solid white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* margin: 10px; */
+}
+
+.div2LeftContainer{
+    width: 65%;
+    height: auto;
+    border: 2px solid green;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div2RightContainer{
+    width: 35%;
+    height: 200px;
+    border: 2px solid rgb(197, 198, 207);
+}
+
+.div3Container{
+    color: white;
+    background-color: #0B0E11;
+    border: 2px solid rgb(169, 30, 30);
+    padding: 20px;
+}
+

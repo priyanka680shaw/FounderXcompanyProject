@@ -4,7 +4,7 @@ export default function SmallCard({heading ,para2 , image , flexDirection , main
     const  mainContainerStyle = {
         width : mainContainerWidth ?  mainContainerWidth : "400px",
         height : "auto",
-        marginBottom : "18px",
+        marginBottom : flexDirection == "column" ? "0px" :  "18px",
         // border : "2px solid black"
     }
 

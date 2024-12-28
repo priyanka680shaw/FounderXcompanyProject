@@ -14,8 +14,7 @@ export default function Navbar(){
                         <li className= {navbarStyle.li}>globle</li>
                         <li className= {navbarStyle.li}>business</li>
                         <li className= {navbarStyle.li}>commodities</li>
-                        <li className= {navbarStyle.li}>stock</li>
-                        <li className= {navbarStyle.li}>currencies</li>
+                        <li className= {navbarStyle.li}>stock</li>       
                     </ul>
                 </div>
             </div>

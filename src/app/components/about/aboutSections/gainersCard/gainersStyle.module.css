@@ -1,10 +1,7 @@
 .mainContainer{
     width: 100%;
     height : "auto";
-    padding : "10px";
-    background-color: #F9F9F9;
-    /* box-shadow: 2px 2px 0.8 10px black; */
-   
+    padding: 10px; 
 }
 
 .innerContainer {
@@ -14,7 +11,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* background-color: blueviolet; */
+    margin: auto;
+    border: 0px solid rgb(131, 126, 126);
+    box-shadow: 0px 0px 7px 3px rgba(93, 92, 92, 0.5); 
 
 }
 
@@ -29,7 +28,7 @@
     width: 250px;
     display: flex;
    position: relative; 
-    left :150px ;
+    left :120px ;
 }
 
 .btn1{
@@ -45,14 +44,15 @@
     border: 2px solid black;
     justify-content: space-around;
     font-weight: bold;
-    padding: 5PX 0PX;
-}
-
-.p{
-
+    padding: 5px 0px;
 }
 
 .aTag{
     text-decoration: underline;
     text-align: end;
+}
+
+.aTag:hover{
+    cursor: pointer;
+    color:  blue;
 }

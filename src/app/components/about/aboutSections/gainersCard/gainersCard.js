@@ -1,22 +1,22 @@
 import gainersCardStyle from "./gainersStyle.module.css"
-export default function GainersCard(){
+export default function GainersCard({heading , b1 ,b2 ,p1,p2,p3,p4,a}){
     return(
         <>
             <div className={gainersCardStyle.mainContainer}>
                 <div className={gainersCardStyle.innerContainer }>
-                    <h1 className={gainersCardStyle.h1} >Top Gainers</h1>
+                    <h1 className={gainersCardStyle.h1} >{heading}</h1>
                     <div className={gainersCardStyle.button1}>
-                        <div style={{backgroundColor : "#EE6E25" }} className= {gainersCardStyle.btn1}>NEFTY</div>
-                        <div style={{color : "gray"}} className= {gainersCardStyle.btn1}>SENSEX</div>
+                        <div style={{backgroundColor : "#EE6E25" }} className= {gainersCardStyle.btn1}>{b1}</div>
+                        <div style={{color : "gray"}} className= {gainersCardStyle.btn1}>{b2}</div>
                     </div>
                     <div className={gainersCardStyle.button2}>
-                        <p className={gainersCardStyle}>Company</p>
-                        <p>Price</p>  
-                        <p>Change</p>
-                        <p>%Gain</p>
+                        <p className={gainersCardStyle}>{p1}</p>
+                        <p>{p2}</p>  
+                        <p>{p3}</p>
+                        <p>{p4}</p>
                     </div>
                     <div className={gainersCardStyle.aTag}>
-                        <a>see all top Gainers</a>
+                        <a>{a}</a>
                     </div>
                     
                 </div>

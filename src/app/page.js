@@ -3,9 +3,11 @@ import Bannerpage from "./components/banner/bannerpage";
 import SliderPage from "./components/slider/slider";
 import About from "./components/about/about";
 import Footer from "./layouts/footer/footer";
-import Navbar from "./components/about/aboutSections/navbar/nanvbar";
+import Pichart from "./components/pichart/pichart";
 export default function Home() {
    return (
+
+
     <>
     <div className=" w-[100%] bg-white flex flex-col justify-center items-center m-auto h-auto">
       <HeaderMainPage/>
@@ -14,8 +16,10 @@ export default function Home() {
       <About/>
 
       <Footer/>
-      <Navbar/>
-     
+
+    
+
+     {/* <Pichart/> */}
     </div>
     </>
   );

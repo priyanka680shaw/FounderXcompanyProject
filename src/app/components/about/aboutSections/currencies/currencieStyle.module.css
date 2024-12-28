@@ -1,0 +1,26 @@
+.caption{
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.currencyTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .th,
+  .td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .currencyTable th {
+    background-color: #f2f2f2;
+  }
