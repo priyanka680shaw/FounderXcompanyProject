@@ -1,0 +1,32 @@
+.mainContainer{
+    width: 100%;
+    /* height: 700px; */
+    box-sizing: border-box;
+   display: flex;
+    height : "auto" ;
+    border: 2px solid red;
+    
+}
+
+.rightContainer{
+    width: 35%;
+}
+
+.leftContainer{
+    width: 65%;
+}
+
+
+@media only screen and (max-width : 770px){
+    .mainContainer{
+       display: block;
+    }
+
+    .rightContainer{
+        width: 100%;
+    }
+    
+    .leftContainer{
+        width: 100%;
+    }
+}

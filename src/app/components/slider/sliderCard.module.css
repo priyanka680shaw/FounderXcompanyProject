@@ -27,14 +27,18 @@
 
   /* Slider card*/
   .cardContainer{
-    width: 425px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: 10px;
+    padding: 10px;
+  
   }
 
   .innerContainer{
     width: 100%;
     display: flex;
     /* border: 2px solid green; */
-    gap: 30px;
+    gap: 20px;
   }
 
   .imageContainer{
@@ -59,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    /* border: 2px solid green; */
   }
 
   .figureCaption{
@@ -84,3 +89,27 @@
     color: #F20E62; /* Color changes on hover */
   }
   
+
+  /* responsive  */
+
+  @media only screen and (max-width : 1025px){
+    /* .imageContainer{
+      height: 100px;
+    }
+
+    .captioncContainer{
+      height: 100px;
+    } */
+
+}
+
+@media only screen and (max-width : 768px){
+  .imageContainer{
+    height: 100px;
+  }
+
+  .captioncContainer{
+    height: 100px;          
+  }
+
+}

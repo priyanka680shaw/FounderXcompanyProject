@@ -1,7 +1,48 @@
+'use client'
+import { useEffect , useState } from "react";
 import Image from "next/image"
 import bannerStyle from "./banner.module.css"
 // import banner1 from "../../images/banner1.webp"
 export default function BannerImageCard({height , image , headingText , btnColor , buttonText , fontSize}){
+
+
+    const [responsiveFontSize, setResponsiveFontSize] = useState(fontSize);
+
+    useEffect(() => {
+      const updateFontSize = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth <= 321) {
+          setResponsiveFontSize("4px"); // Adjust font size for small screens
+        } else if (screenWidth <= 768) {
+          setResponsiveFontSize("10px"); // Adjust font size for medium screens
+        } 
+       else if (screenWidth <= 1024) {
+        setResponsiveFontSize("18px"); // Adjust font size for medium screens
+      }
+      else if (screenWidth <= 1440) {
+        setResponsiveFontSize("18px"); // Adjust font size for medium screens
+      }else {
+          setResponsiveFontSize(fontSize); // Default font size for larger screens
+        }
+      };
+  
+      updateFontSize(); // Set initial font size
+      window.addEventListener("resize", updateFontSize); // Update on resize
+  
+      return () => {
+        window.removeEventListener("resize", updateFontSize); // Cleanup
+      };
+    }, [fontSize]);
+  
+
+
+
+
+
+
+
+
+
     return(
         <>
             <figure style={{position : "relative"}}>
@@ -15,7 +56,7 @@ export default function BannerImageCard({height , image , headingText , btnColor
                             />
                             <div style={{position : "absolute" , color : "white" , bottom  :"30px" , left : "30px"}}>
                                 <button className = {bannerStyle.buttonType} style={{backgroundColor : btnColor}}>{buttonText}</button>
-                                <h1 className={bannerStyle.heading} style={{fontSize : fontSize}}>{headingText}</h1>
+                                <h1 className={bannerStyle.heading} style={{fontSize : responsiveFontSize}}>{headingText}</h1>
                             </div>
                         </div>
                       

@@ -1,8 +1,8 @@
 .mainContainer{
     width: 100%;
-    height: 450px;
+   height: auto;
     /* border: 2px solid red; */
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     display: flex;
     justify-content: space-between;
 }
@@ -17,7 +17,7 @@
 
 .righContainer{
     width: 45%;
-    height: 450px;
+    /* height: 450px; */
 }
 
 .topdiv{
@@ -41,9 +41,6 @@
 }
 
 .mainImage{
-    /* object-fit: "cover" ;
-    object-position : "top-center" ; */
-    /* padding  :"5px" ; */
     border-radius : "15px";
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -73,3 +70,76 @@
 
 /* responsive  */
 
+@media only screen and (max-width  : 426px){
+    .mainContainer{
+        border: 2px solid red;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .leftContainer{
+        width: 100%;
+    }
+
+    .righContainer{
+        width: 100%;
+        height: auto;
+    }
+    .bottomdiv{
+        display: flex;
+        overflow: hidden;
+        /* flex-direction: column; */
+    }
+
+    /* card Stling */
+
+    .mainImage{
+        height: auto;
+       
+    }
+
+    .buttonType{
+        padding: 5px 10px;
+        display: block;
+        margin: 10px 0px ;
+        text-transform: capitalize;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+   
+   
+}
+
+/* @media only screen and (max-width : 768px){
+    
+
+} */
+
+@media only screen and (max-width : 765px){
+    
+}
+
+@media only screen and (min-width : 765px) and (max-width : 1024px ){
+    .mainContainer{
+        display: block;
+    }
+
+    .leftContainer{
+        width: 100%;
+    
+    }
+
+    .righContainer{
+        width: 100%;
+        /* height: 450px; */
+    }
+
+    .imgContainer{
+        width: "100%";  
+        position: "relative";
+        margin: 1px;
+        /* padding: 5px; */
+        overflow: hidden;
+    }
+}

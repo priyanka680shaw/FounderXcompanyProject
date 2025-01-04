@@ -5,7 +5,7 @@ import Global from "../aboutSections/globle/globle"
 import Finance from "../aboutSections/finance/finance"
 import Navbar from "../aboutSections/navbar/nanvbar"
 import Currencies from "../aboutSections/currencies/currencies"
-
+import leftSideBarStyle from "./leftSideBar.module.css"
 export default function LeftSideBar(){
     const mainContainer = {
         display  :"flex",
@@ -20,7 +20,8 @@ export default function LeftSideBar(){
     }
     return(
         <>
-            <div  style = {mainContainer}>
+        {/* <div style={mainContainer}> */}
+            <div  className= {leftSideBarStyle.mainContainer}>
             <Navbar/>
             <News/>
             <Currencies/>

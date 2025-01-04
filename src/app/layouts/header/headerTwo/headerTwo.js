@@ -2,6 +2,7 @@ import Wrapper from "../../wrapper/wrapper";
 import headerTwoStyle from './headerTwo.module.css';
 import logoImage from "../../../images/logo.png"
 import Image from "next/image";
+import { TiThMenu } from "react-icons/ti";
 //importing search icon from react icons
 import { CiSearch } from "react-icons/ci";
 export default function HeaderTwo() {
@@ -10,8 +11,9 @@ export default function HeaderTwo() {
         <>
             <Wrapper>
             <div className={headerTwoStyle.mainContainer}>
-                    <div className="logo">
-                        <Image src={logoImage} alt="founderlogo" style={{cursor : "pointer"}}></Image>
+                    <div className={headerTwoStyle.logo}>
+                        <Image src={logoImage} alt="founderlogo" style={{cursor : "pointer"}} className="logoImage"></Image>
+                        <TiThMenu className={headerTwoStyle.hamburg}/>
                     </div>
                     <div className={headerTwoStyle.searchBar}>
                         <input type="text" placeholder="Search  Stock , Quotes , News , Mutual Funds and more ..." className={headerTwoStyle.searchInput}/>

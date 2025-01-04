@@ -8,6 +8,18 @@
     /* border: 2px solid black; */
 }
 
+.logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.hamburg{
+    display: none;
+}
+
+
 .searchIcon {
     font-weight: bold;
     padding: 10px 20px;
@@ -71,7 +83,26 @@
 /* Fixed media query */
 @media only screen and (max-width: 321px) {
     .mainContainer {
-       padding: 0px;
-       /* display: none; */
+        border: 2px solid red;
+        padding: 0px;
     }
+
+    .hamburg{
+        display: block;
+    }
+
+    .logo>Image{
+       width: 60px;
+    }
+
+    .searchBar{
+        display: none;
+    }
+
+    .btnStyle{
+        display: none;
+    }
+
+
+
 }

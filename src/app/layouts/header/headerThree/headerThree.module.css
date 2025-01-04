@@ -1,17 +1,21 @@
+
 .mainContainer {
-    width : 100%;
-    padding:  10px 0px;
+    width: 100%;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: auto; /* Enable horizontal scrolling only */
+    white-space: nowrap; /* Prevent wrapping */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
-.mainContainer>ul{
-    width: 100%;
+.mainContainer > ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin: 0;
+    padding: 0;
 }
 
 .mainContainer > ul > li {
@@ -24,5 +28,23 @@
 }
 
 .mainContainer > ul > li:hover {
-    color: rgb(216,9,27);
+    color: rgb(216, 9, 27);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 320px) {
+    .mainContainer > ul > li {
+        font-size: 12px;
+        padding: 0 4px;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1026px) {
+    .mainContainer {
+        overflow-x: auto; /* Scroll only when needed */
+    }
+
+    .mainContainer > ul {
+        width: 80%;
+    }
 }

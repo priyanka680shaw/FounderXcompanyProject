@@ -1,5 +1,6 @@
 import Card from "../maincard/card"
-export default function SmallCard({heading ,para2 , image , flexDirection , mainContainerWidth , imageContainerWidth , btnTextLable}){
+import smallCardStyle from "./smallCardStyle.module.css"
+export default function SmallCard({heading ,para2 , image , flexDirection , mainContainerWidth , imageContainerWidth , btnTextLable , cards}){
 
     const  mainContainerStyle = {
         width : mainContainerWidth ?  mainContainerWidth : "400px",
@@ -25,7 +26,7 @@ export default function SmallCard({heading ,para2 , image , flexDirection , main
 
     return(
         <>
-            <Card  mainContainerStyle = {mainContainerStyle}  innerContainerStyle={innerContainerStyle}  textContainer ={textContainer} heading={heading} para2={para2} image={image} btnTextLable = {btnTextLable}/>
+            <Card  mainContainerStyle = {mainContainerStyle}  innerContainerStyle={innerContainerStyle}  textContainer ={textContainer} heading={heading} para2={para2} image={image} btnTextLable = {btnTextLable} />
             </>
     )
 }
