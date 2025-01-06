@@ -1,4 +1,4 @@
-.div1Container{
+/* .div1Container{
     border : 2px solid red;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
     width: 100%;
     height: auto;
     display: flex;
-    /* margin: 10px; */
+
 }
 
 .div2LeftContainer{
@@ -39,4 +39,92 @@
     border: 2px solid rgb(169, 30, 30);
     padding: 20px;
 }
+ */
 
+
+
+
+ .footerMainContainer{
+    width: 100%;
+    height: auto;
+    background-color: #001f3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 0px; */
+ }
+
+ .logoContainer{
+    width: 100%;
+    /* height: 200px; */
+    /* border: 2px solid red; */
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .menuListContainer{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid rgb(194, 109, 109); */
+    /* display: flex; */
+ }
+
+
+
+ .menuListInnerContainer{
+    /* border: 2px solid rgb(231, 243, 231); */
+    display: flex;
+    width: 100%;
+ }
+
+ .menuListInnerContainer>.menuList{
+    /* border: 2px solid rgb(22, 25, 22); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .menuListInnerContainer>.menuList>ul{
+    text-align: center;
+    font-size: 25px;
+    color : white;
+    cursor: pointer;
+ }
+
+ .menuListInnerContainer>.menuList>h3{
+    color: white;
+    cursor: pointer;
+ }
+
+ 
+ .rightSideContainer{
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(173, 113, 35); */
+    color: white;
+ }
+
+ .bottomContainer{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0B0E11;
+    padding: 5px 0px;
+ }
+
+.footerLinks{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.footerCopyright{
+    text-align: center;
+}
