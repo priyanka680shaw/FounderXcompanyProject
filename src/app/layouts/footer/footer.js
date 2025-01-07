@@ -76,7 +76,7 @@ const footerData = [
 ];
 
 const Footer = () => {
-             <h3 className="text-lg font-bold mb-4">{section.title}</h3>
+            
  
 
   const iconSize = 30; // Adjust size as needed

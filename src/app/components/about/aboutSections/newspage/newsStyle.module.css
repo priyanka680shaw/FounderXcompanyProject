@@ -1,7 +1,7 @@
 .mainContainer{
     width: 100%;
     height: auto;
-     border: 2px solid black;
+     /* border: 2px solid black; */
     display: flex;
     gap: 15px;
 }
@@ -19,7 +19,7 @@
 .cardss{
     border: 12px solid green;
 }
-@media only screen and (max-width : 1024px){
+/* @media only screen and (max-width : 1024px){
     .mainContainer{
         display: block;
         gap: 10px;
@@ -45,7 +45,7 @@
     }
 
     
-}
+} */
 
 /* @media only screen (max-width : 770px){
 

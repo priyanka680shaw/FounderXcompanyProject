@@ -1,0 +1,36 @@
+/* responsive Mobile screen max-width   430px */
+
+@media only screen and (max-width : 430px){
+    /* header */
+    .searchBar{
+        display: none;
+    }
+
+    .mainContainer{
+        background-color:aqua ;
+    }
+
+}
+
+/* responsive tablet screen max-width  430px */
+
+@media only screen and (max-width : 770px){
+
+}
+
+/* responsive Laptop screen max-width  430px */
+
+@media only screen and (max-width : 1030px){
+
+}
+/* responsive Large screen max-width  1450px */
+
+@media only screen and (max-width : 430px){
+
+}
+
+/* responsive Extra Large screen max-width  2560 instead of 2600px */
+
+@media only screen and (max-width : 430px){
+
+}

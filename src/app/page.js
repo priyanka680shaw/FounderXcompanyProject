@@ -3,23 +3,19 @@ import Bannerpage from "./components/banner/bannerpage";
 import SliderPage from "./components/slider/slider";
 import About from "./components/about/about";
 import Footer from "./layouts/footer/footer";
-import Pichart from "./components/pichart/pichart";
+import responsiveCss from "./pageResponsive.module.css" 
 export default function Home() {
    return (
 
 
     <>
-    <div className=" w-[100%] bg-white flex flex-col justify-center items-center m-auto h-auto">
+    <div className=" w-[100%] bg-white flex flex-col justify-center items-center m-auto h-auto" >
       <HeaderMainPage/>
       <Bannerpage/>
       <SliderPage/>
       <About/>
 
       <Footer/>
-
-    
-
-     {/* <Pichart/> */}
     </div>
     </>
   );
