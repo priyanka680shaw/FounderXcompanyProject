@@ -51,9 +51,7 @@ export default function BannerImageCard({height , image , headingText , btnColor
                                 src={image}
                                 alt="Image"
                                 // fill
-                                className= {bannerStyle.mainImage}
-                                // style={{ objectFit: "cover" , objectPosition : "top-center" , padding  :"5px" , borderRadius : "15px"}} // Makes the image cover the container
-                            />
+                                className= {bannerStyle.mainImage}/>
                             <div style={{position : "absolute" , color : "white" , bottom  :"30px" , left : "30px"}}>
                                 <button className = {bannerStyle.buttonType} style={{backgroundColor : btnColor}}>{buttonText}</button>
                                 <h1 className={bannerStyle.heading} style={{fontSize : responsiveFontSize}}>{headingText}</h1>

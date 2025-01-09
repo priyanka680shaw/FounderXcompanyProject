@@ -1,8 +1,6 @@
 .mainContainer{
     width: 100%;
    height: auto;
-    /* border: 2px solid red; */
-    /* margin: 10px 0px; */
     display: flex;
     justify-content: space-between;
 }

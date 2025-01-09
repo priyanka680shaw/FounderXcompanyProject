@@ -2,8 +2,7 @@
 /* @import 'bootstrap/dist/css/bootstrap.min.css' */
 
 /* tailwind css added here */
-
-
+@import './responsive.css'; 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

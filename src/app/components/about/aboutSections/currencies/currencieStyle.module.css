@@ -1,44 +1,44 @@
-.currencyTable {
+.tableContainer {
+  /* margin: 20px;*/
+  padding: 20px; 
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 16px;
+  text-align: left;
 }
 
-.caption {
-  font-size: 18px;
+.table th, 
+.table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f1f1f1;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
-.th, .td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+.positive {
+  color: green;
 }
 
-@media screen and (max-width: 768px) {
-  .currencyTable {
-    font-size: 14px;
-  }
-
-  .th, .td {
-    padding: 6px;
-  }
+.negative {
+  color: red;
 }
 
-@media screen and (max-width: 480px) {
-  .currencyTable {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .caption {
-    font-size: 16px;
-  }
-
-  .th, .td {
-    font-size: 12px;
-    padding: 4px;
-  }
+.icon {
+  font-size: 0.9rem;
+  color: #888;
 }

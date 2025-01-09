@@ -3,7 +3,7 @@ import Bannerpage from "./components/banner/bannerpage";
 import SliderPage from "./components/slider/slider";
 import About from "./components/about/about";
 import Footer from "./layouts/footer/footer";
-import responsiveCss from "./pageResponsive.module.css" 
+
 export default function Home() {
    return (
 
