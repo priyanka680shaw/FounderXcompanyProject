@@ -1,6 +1,6 @@
 /* responsive Mobile screen max-width   430px */
 
-@media only screen and (max-width : 430px) and (min-width : 315px){
+@media only screen and (max-width : 770px) and (min-width : 315px){
     /* header */
     .headerTwoStyleMainContainer{
         display: block;
@@ -8,13 +8,9 @@
 
     .headerTwoStyleSearchBar{
         width: 300px;
-        /* background-color: aqua; */
+      
     }
 
-  .logoImage{
-    /* width: 50px;
-    height: aouto; */
-  }
 
   .headerTwoStyleHamburg{
     display: flex;
@@ -35,7 +31,6 @@
 
   .headerTwoStyleSearchBar{
     display: none;
-    /* background-color: rgb(21, 21, 180); */
   }
 
   .headerTwoStyleSearchInput{
@@ -48,7 +43,82 @@
 
   /* banner */
 
+  .bannerMainContainer{
+    border: 2px solid rgb(0, 2, 90);
+    display: block !important ; 
+  }
+
+  .bannerLeftContainer ,  .bannerRightContainer{
+    /* border: 2px solid yellow; */
+    width: 100% !important;
+    height: auto;
+  }
+
+  .bannreBottomDiv{
+    /* border: 12px solid yellow; */
+    display: block !important;
+   
+  }
+
+  .bannerBottomDivRightContainer , .bannerBottomDivLeftContainer{
+    width: 100% !important;
+  }
+  /* wrapper */
+
+  .wrapperMainContainer{
+    width: 95% !important  ;
+  }
+
+  /* about */
+
+  .aboutMainContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* about leftSideContainer */
+  .aboutMainLeftContainer{
+    background-color: green;
+    width: 100% !important;
+  }
+ 
+  /* aboutHeading */
+
+  .aboutHeadingContainer{
+    font-size: 25px !important;
+  }
+
+  .aboutHeadingHrContainer ,.aboutHeadingBullet{
+    display: none !important;
+  }
+
   
+  /* Footer */
+
+  .logoContainer{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .footerSocialIcons{
+  width: 100%;
+    align-items: center;
+ }
+
+ 
+ .menuListInnerContainer{
+   
+  display: block !important;
+ /* border: 2px solid red; */
+}
+
+.footerCopyright{
+  padding: 20px;
+}
+
 }
 
 /* responsive tablet screen max-width  430px */

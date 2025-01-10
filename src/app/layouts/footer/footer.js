@@ -75,7 +75,7 @@ const footerData = [
   },
 ];
 
-const Footer = () => {
+const Footer = () => { 
             
  
 
@@ -83,16 +83,16 @@ const Footer = () => {
 
   return (
     <>
-      <div className={footerStyle.footerMainContainer}>
+      <div className={`${footerStyle.footerMainContainer} footerMainContainer` }>
         <Wrapper
           className={footerStyle.wrapper}
         
         >
-          <div className={footerStyle.logoContainer}>
+          <div className={`${footerStyle.logoContainer} logoContainer`}>
             <div className={footerStyle.logo}>
               <Image src={footerLogo} alt="footerLogo"></Image>
             </div>
-            <div className="flex justify-center space-x-6">
+            <div className= {`${footerStyle.footerSocialIcons} footerSocialIcons`}>
               <a
                 href="https://www.facebook.com"
                 target="_blank"
@@ -137,8 +137,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className={footerStyle.menuListContainer}>
-              <div className= {footerStyle.menuListInnerContainer}>
+          <div className={`${footerStyle.menuListContainer} menuListContainer`}>
+              <div className= {`${footerStyle.menuListInnerContainer} menuListInnerContainer`}>
               {footerData.map((section, index) => (
               <div key={index} className= {footerStyle.menuList}>
                 <h3 className="text-lg font-bold mb-4">{section.title}</h3>
@@ -153,7 +153,7 @@ const Footer = () => {
             ))}
               </div>
             {/* </div> */}
-            <div className={footerStyle.rightSideContainer}>
+            <div className={footerStyle.stockSideContainer}>
 
             <div className="border-t border-gray-700 mt-8 pt-4 px-4 text-center">
              <p>
@@ -191,7 +191,7 @@ const Footer = () => {
     <a href="#">RSS Feed</a>
             </div>
 
-  <p className={footerStyle.footerCopyright}>
+  <p className={`${footerStyle.footerCopyright} footerCopyright`}>
     Copyright © FoundreX. All rights reserved. Reproduction of news articles, photos, videos, or any other content in whole
     or in part in any form or medium without express written permission is prohibited.
   </p>

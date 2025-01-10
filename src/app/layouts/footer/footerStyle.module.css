@@ -1,46 +1,3 @@
-/* .div1Container{
-    border : 2px solid red;
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-}
-
-.div1SocilIcons{
-    display: flex;
-    gap  :10px
-}
-
-.div2Container{
-    border: 2px solid white;
-    width: 100%;
-    height: auto;
-    display: flex;
-
-}
-
-.div2LeftContainer{
-    width: 65%;
-    height: auto;
-    border: 2px solid green;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.div2RightContainer{
-    width: 35%;
-    height: 200px;
-    border: 2px solid rgb(197, 198, 207);
-}
-
-.div3Container{
-    color: white;
-    background-color: #0B0E11;
-    border: 2px solid rgb(169, 30, 30);
-    padding: 20px;
-}
- */
-
 
 
 
@@ -52,36 +9,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 20px 0px; */
+ 
  }
 
  .logoContainer{
     width: 100%;
-    /* height: 200px; */
-    /* border: 2px solid red; */
     padding: 15px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
  }
 
+ .footerSocialIcons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+    gap: 5;
+ }
+   
+ .footerSocialIcons>a{
+   margin: 10px;
+ }
  .menuListContainer{
     width: 100%;
     height: auto;
-    /* border: 2px solid rgb(194, 109, 109); */
-    /* display: flex; */
+    
  }
 
 
 
  .menuListInnerContainer{
-    /* border: 2px solid rgb(231, 243, 231); */
+   
     display: flex;
     width: 100%;
+    /* border: 2px solid red; */
  }
 
  .menuListInnerContainer>.menuList{
-    /* border: 2px solid rgb(22, 25, 22); */
+   
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -101,17 +67,17 @@
  }
 
  
- .rightSideContainer{
+ .stockSideContainer{
     width: 100%;
     height: auto;
-    /* background-color: rgb(173, 113, 35); */
+
     color: white;
  }
 
  .bottomContainer{
     width: 100%;
     height: auto;
-    /* border: 2px solid red; */
+   
     display: flex;
     justify-content: center;
     align-items: center;
