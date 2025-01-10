@@ -14,7 +14,7 @@ export default function RightSideBar(){
 
 
         <>
-             <div className= {rightSideBarStyle.mainContainer}>
+             <div className= {`${rightSideBarStyle.mainContainer} rightSideBarMainContainer`}>
                 <Navbar/>
                 <Pichartone/>
                 <EditorsPick/>

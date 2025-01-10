@@ -46,7 +46,7 @@ export default function BannerImageCard({height , image , headingText , btnColor
     return(
         <>
             <figure style={{position : "relative"}}>
-                        <div style={{ height: height }} className={bannerStyle.imgContainer}>
+                        <div style={{ height: height }} className= {`${bannerStyle.imgContainer} bannerImageConztiner`}>
                             <Image
                                 src={image}
                                 alt="Image"

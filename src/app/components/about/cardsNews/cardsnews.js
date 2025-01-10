@@ -39,7 +39,7 @@ export default function CardsNews(){
 
     const cardsContainer = {
         width : "100%" ,
-        // border : "2px solid blue",
+        // border : "12px solid blue",
         display  :"flex",
         justifyContent : "center"
     }

@@ -40,8 +40,8 @@ export default function Global(){
     return(
         <>
             <AboutHeading heading={"Globle"}/>
-            <div className={globleStyle.mainContainer}>
-                <div className={globleStyle.bigCards}>
+            <div className= {`${globleStyle.mainContainer} globleMainContainer`}>
+                <div className= {`${globleStyle.bigCards} globleBigCardContainer`}>
                     <BigCard image ={img}/>
                     <BigCard image ={img}/>
                 </div>

@@ -6,12 +6,8 @@
 
 .bigCards{
     width: 100%;
- 
     display: flex;
     gap: 15px;
-
-   
-
 }
 
 .smallCards{

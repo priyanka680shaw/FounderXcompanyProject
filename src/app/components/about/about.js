@@ -14,7 +14,7 @@ export default function About(){
                     <div className= {`${aboutStyle.leftContainer} aboutMainLeftContainer`}>
                         <LeftSideBar/>
                     </div>
-                    <div className={aboutStyle.rightContainer}>
+                    <div className= {`${aboutStyle.rightContainer} aboutRightContainer`}>
                         <RightSideBar/>
                     </div>
                 </div>

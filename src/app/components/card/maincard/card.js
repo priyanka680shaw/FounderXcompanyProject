@@ -12,12 +12,12 @@ export default function  Card(
 
         
         <>
-            <div className= {cardStyle.mainContainer} style={{...mainContainerStyle}}>
-                <div className={cardStyle.innerContainer} style={{...innerContainerStyle}}>
+            <div className= {`${cardStyle.mainContainer} cardMainContainer`} style={{...mainContainerStyle}}>
+                <div className={`{cardStyle.innerContainer} cardInnerContainer`} style={{...innerContainerStyle}}>
                     <figure className= {cardStyle.imageContainer}>
                             <Image src={image} alt = "bgImage" style={{width : "100%" , height : "100%" , borderRadius : "5px"}}></Image>
                            {
-                            btnText ? <button className={cardStyle.button1}>{btnText}</button>  : null
+                            btnText ? <button className= {`${cardStyle.button1} cardButton1`} >{btnText}</button>  : null
                            } 
                            {
                             btnTextLable ? <button className={cardStyle.button2}>{btnTextLable}</button> : null

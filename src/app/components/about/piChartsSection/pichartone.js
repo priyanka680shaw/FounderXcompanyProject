@@ -1,23 +1,12 @@
 'use client'
-
+import pichartStyle from './pichartStyle.module.css'
 import MarketDashboard from "../../pichart/pichart"
 export default function Pichartone(){
-    const mainContainer = {
-        width : "100%" , 
-        // border : "2px solid red",
-        padding  :"10px"
-    }
-
-    const innerContainer = {
-        width : "100%" , 
-        boxShadow :  "0px 0px 10px 2px gray ",
-        padding  :"15px",
-        // margin :  "10px"
-    }
+  
     return(
         <>
-            <div style={mainContainer}> 
-               <div style={innerContainer}>
+            <div className= {`${pichartStyle.mainContainer} piChartMainContainer`}> 
+               <div className= {`${pichartStyle.innerContainer} piChartinnerContainer`}>
                <MarketDashboard/>
                </div>
                 

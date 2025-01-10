@@ -17,7 +17,7 @@ export default function Bannerpage (){
                 </div>
 
                 <div className={`${bannerStyle.righContainer} bannerRightContainer`}>
-                    <div className={bannerStyle.topdiv}  >
+                    <div className= {`${bannerStyle.topdiv} bannerRightContainerTopContainer`} >
                         <BannerImageCard height = {"250px"} image={banner2} headingText = {"Contrary to popular belief, Lorem Ipsum is not simply random text"} buttonText={"finance"} btnColor ={"#0074CC"} fontSize = {"25px"}/>
                     </div>
                     <div className= {`${bannerStyle.bottomdiv} bannreBottomDiv`} style={{ width: "100%",  position: "relative"}}>
