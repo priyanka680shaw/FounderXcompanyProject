@@ -23,7 +23,7 @@ const indices = [
 export default function MarketDashboard() {
   return (
     <div className="container mx-auto px-4 lg:px-8">
-      <h1 className="text-lg font-bold mb-4 text-center md:text-left">Market Action</h1>
+      <h1 className="text-lg font-bold mb-4 text-center ">Market Action</h1>
 
       {/* Chart Section */}
       <div className="mb-6">

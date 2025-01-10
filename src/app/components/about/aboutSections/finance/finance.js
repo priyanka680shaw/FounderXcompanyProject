@@ -31,7 +31,7 @@ export default function Finance(){
         <>
             <AboutHeading heading={"Finance"}/>
             <div className={`${financeStyle.mainContainer} finnanceMainContainer`}>
-                <div className={`${financeStyle.bigCards} finnanceBigCards`}>
+            <div className={`${financeStyle.bigCards} finnanceBigCards`}>
                     <BigCard image ={img}/>
                     <BigCard image ={img}/>
                 </div>

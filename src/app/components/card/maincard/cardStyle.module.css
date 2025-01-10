@@ -1,5 +1,5 @@
 .mainContainer{
- 
+    /* border: 2px solid red; */
 }
 
 .innerContainer{
@@ -7,7 +7,6 @@
     display: flex;
     gap: 10px;
     /* background-color: aqua; */
-    /* border: 12px solid rgb(72, 0, 255); */
 }
 
 .imageContainer{

@@ -47,10 +47,21 @@
     display: block !important ;
   }
 
-  .bannerImageConztiner .bannerRightContainerTopContainer .bannerBottomDivRightContainer{
+ .bannerRightContainerTopContainer {
     height: auto !important;
   }
 
+  .bannerBottomDivRightContainer{
+    height: auto !important;
+  }
+
+  .bannerBottomDivLeftContainer{
+    height: auto !important;
+  }
+
+  .bannerImageConztiner{
+    height: auto !important;
+  }
 
   .bannerLeftContainer,
   .bannerRightContainer {
@@ -160,6 +171,7 @@
 
     .gainersCardButton2{
       font-weight: 600;
+      justify-content: space-around!important;
     }
 
     /* pichart */

@@ -30,3 +30,8 @@ export default function SmallCard({heading ,para2 , image , flexDirection , main
             </>
     )
 }
+
+
+
+
+
