@@ -14,13 +14,13 @@ export default function BannerImageCard({height , image , headingText , btnColor
         if (screenWidth <= 321) {
           setResponsiveFontSize("4px"); // Adjust font size for small screens
         } else if (screenWidth <= 768) {
-          setResponsiveFontSize("10px"); // Adjust font size for medium screens
+          setResponsiveFontSize("20px"); // Adjust font size for medium screens
         } 
        else if (screenWidth <= 1024) {
-        setResponsiveFontSize("18px"); // Adjust font size for medium screens
+        setResponsiveFontSize("20px"); // Adjust font size for medium screens
       }
       else if (screenWidth <= 1440) {
-        setResponsiveFontSize("18px"); // Adjust font size for medium screens
+        setResponsiveFontSize("30px"); // Adjust font size for medium screens
       }else {
           setResponsiveFontSize(fontSize); // Default font size for larger screens
         }

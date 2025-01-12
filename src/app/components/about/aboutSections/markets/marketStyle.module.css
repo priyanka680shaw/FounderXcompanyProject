@@ -1,7 +1,7 @@
 .mainContainer{
     width: 100%;
     height: auto;
-     border: 2px solid rgb(28, 27, 27);
+     /* border: 2px solid rgb(28, 27, 27); */
     display: flex;
     justify-content: space-between;
     gap: 15;

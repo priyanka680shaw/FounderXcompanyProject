@@ -202,7 +202,7 @@
   }
 }
 
-/* responsive tablet screen max-width  430px */
+/* responsive tablet screen max-width  770px */
 
 @media only screen and (max-width: 770px) {
     /* banner */
@@ -223,9 +223,9 @@
       height: auto !important;
     }
   
-    .bannerImageConztiner{
+    /* .bannerImageConztiner{
       height: auto !important;
-    }
+    } */
   
     .bannerLeftContainer,
     .bannerRightContainer {
@@ -233,14 +233,9 @@
       height: auto;
     }
   
-    .bannreBottomDiv {
-      display: block !important;
-    }
+    
   
-    .bannerBottomDivRightContainer,
-    .bannerBottomDivLeftContainer {
-      width: 100% !important;
-    }  
+    
     
     /* wrapper */
 
@@ -268,15 +263,15 @@
     width: 100% !important;
   }
 
+  .rightSideBarGainerCardStyle{
+    display: flex !important;
+  }
+
    /* gener Cards */
 
-   /* .topLossessMainContainer{
+  .topGainMainContainer , .topLossMainContainer{
     width: 50% !important;
-   }
-
-   .topGainsMainContainer{
-    width: 50% !important;
-   } */
+  }
    .gainersCardsButton1{
     left: 0px !important;
   }
@@ -304,11 +299,38 @@
 
 }
 
-/* responsive Laptop screen max-width  430px */
+/* responsive Laptop screen max-width  1030px */
 
 @media only screen and (max-width: 1030px) {
     
-  
+  /* banner */
+
+  .bannerMainContainer {
+    display: block !important ;
+  }
+
+ .bannerRightContainerTopContainer {
+    height: auto !important;
+  }
+
+  .bannerBottomDivRightContainer{
+    height: auto !important;
+  }
+
+  .bannerBottomDivLeftContainer{
+    height: auto !important;
+  }
+
+  .bannerImageConztiner{
+    /* height: auto !important; */
+  }
+
+  .bannerLeftContainer,
+  .bannerRightContainer {
+    width: 100% !important;
+    height: auto;
+  }
+
   /* wrapper */
 
 .wrapperMainContainer {
@@ -334,16 +356,16 @@
   /* border: 2px solid green; */
   width: 100% !important;
 }
+/* adding to make in one block gain or loss card */
+.rightSideBarGainerCardStyle{
+  display: flex !important;
+}
 
  /* gener Cards */
 
- /* .topLossessMainContainer{
+ .topGainMainContainer , .topLossMainContainer{
   width: 50% !important;
- }
-
- .topGainsMainContainer{
-  width: 50% !important;
- } */
+}
  .gainersCardsButton1{
   left: 0px !important;
 }

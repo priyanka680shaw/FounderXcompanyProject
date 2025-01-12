@@ -41,7 +41,6 @@ export default function Finance(){
                             return(
                                 <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img} flexDirection ={"column"} mainContainerWidth={"200px"}/>
                             )
-                           
                         })
                     }
                 </div>

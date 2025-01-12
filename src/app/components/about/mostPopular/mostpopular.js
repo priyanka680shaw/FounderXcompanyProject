@@ -43,11 +43,11 @@ export default function Mostpopular(){
         <>
             <div style={{...containerStyle}}>
                 <AboutHeading heading={"Most Popular"} fontSize = {"24px"}/>
-                <div className={financeStyle.smallCards} style={{...cardContainer}}>
+                <div className={financeStyle.smallCards} >
                     {
                         smallcardData.map((items , index)=>{
                             return(
-                                <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img} />
+                                  <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img} flexDirection={"column"} imageContainerWidth ={"200px"} mainContainerWidth ={"200px"}/>
                             )
                         
                         })

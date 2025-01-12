@@ -19,8 +19,11 @@ export default function RightSideBar(){
                 <Pichartone/>
                 <EditorsPick/>
                 <FollowMe/>
+                
+                <div className = {`${rightSideBarStyle.gainerCardStyle} rightSideBarGainerCardStyle`}>
                 <TopGainers/>
                 <TopLossers/>
+                </div>
                 <CardsNews/>
                 <Pichartone/>
                 <Mostpopular/>

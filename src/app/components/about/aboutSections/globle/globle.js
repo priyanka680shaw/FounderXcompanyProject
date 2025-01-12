@@ -49,9 +49,8 @@ export default function Global(){
                     {
                         smallcardData.map((items , index)=>{
                             return(
-                                <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img} flexDirection={"column"} imageContainerWidth ={"200px"} mainContainerWidth ={"250px"}/>
+                                <SmallCard key={index} heading ={items.heading} para2 ={items.para2} image={img} flexDirection={"column"} imageContainerWidth ={"200px"} mainContainerWidth ={"200px"}/>
                             )
-                           
                         })
                     }
                 </div>

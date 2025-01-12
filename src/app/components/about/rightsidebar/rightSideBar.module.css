@@ -10,10 +10,8 @@
     box-sizing: border-box; /* Ensure padding and border are included in width/height */
     /* overflow-x: hidden; Prevent horizontal scroll */
 }
-/* 
-@media only screen and (max-width  :770px){
-     .mainContainer{
-        width: 100%;
-     }
-} */
 
+
+.gainerCardStyle{
+    width: 100%;
+}
