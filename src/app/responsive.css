@@ -364,8 +364,8 @@
  /* gener Cards */
 
  .topGainMainContainer , .topLossMainContainer{
-  width: 50% !important;
-}
+    width: 50% !important;
+  }
  .gainersCardsButton1{
   left: 0px !important;
 }

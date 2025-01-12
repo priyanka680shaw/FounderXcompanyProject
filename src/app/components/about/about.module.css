@@ -3,13 +3,15 @@
    height: auto;
     box-sizing: border-box;
    display: flex;
-    height : "auto" ;
+   justify-content: space-between;
+    height : auto ;
     /* border: 2px solid red; */
+
     
 }
 
 .rightContainer{
-    width: 35%;
+    width: 34%;
 }
 
 .leftContainer{

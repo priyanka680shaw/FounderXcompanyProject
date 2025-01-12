@@ -9,9 +9,11 @@ export default function SocialMediacard({ logo, followers, socialIcon, bgColor }
                 display :"flex",
                 justifyContent : "center",
                 alignItems :  "center" ,
-              margin : "10px",
+                 margin : "5px",
                 gap  : "12px",
-                color : "white"
+                color : "white",
+                borderRadius : "10px"
+                // border : "2px solid green"
             }
     return (
         <div style={containerStyle}>

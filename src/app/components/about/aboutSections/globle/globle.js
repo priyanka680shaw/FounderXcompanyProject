@@ -34,7 +34,17 @@ export default function Global(){
         {
             image : img,
             heading : "Budget 2024 : Insights into Fiscal Projections a...",
+
+        },
+        {
+            image : img,
+            heading : "Budget 2024 : Insights into Fiscal Projections a...",
            
+        },
+        {
+            image : img,
+            heading : "Budget 2024 : Insights into Fiscal Projections a...",
+
         }
     ]
     return(
