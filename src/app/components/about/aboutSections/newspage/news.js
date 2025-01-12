@@ -62,7 +62,9 @@ export default function News() {
                 heading={items.heading}
                 para2={items.para2}
                 image={img}
-                className= {`${smallCardStyle.cards} smallCardsf`}
+                
+                // mainContainerWidth={"200px"}
+                className= {`${smallCardStyle.cards} smallCards`}
               />
             );
           })}

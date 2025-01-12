@@ -3,9 +3,9 @@ import smallCardStyle from "./smallCardStyle.module.css"
 export default function SmallCard({heading ,para2 , image , flexDirection , mainContainerWidth , imageContainerWidth , btnTextLable , cards}){
 
     const  mainContainerStyle = {
-        width : mainContainerWidth ?  mainContainerWidth : "400px",
+        width : mainContainerWidth ?  mainContainerWidth : "100%",
         height : "auto",
-        marginBottom : flexDirection == "column" ? "0px" :  "18px",
+        marginBottom : flexDirection == "column" ? "0px" :  "8px",
         // border : "2px solid black"
     }
 

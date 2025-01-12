@@ -156,7 +156,7 @@
   /* About leftSide or bottomContainer */
 
   .aboutRightContainer{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100% !important;
   }
  
@@ -205,13 +205,157 @@
 /* responsive tablet screen max-width  430px */
 
 @media only screen and (max-width: 770px) {
+    /* banner */
+
+    .bannerMainContainer {
+      display: block !important ;
+    }
+  
+   .bannerRightContainerTopContainer {
+      height: auto !important;
+    }
+  
+    .bannerBottomDivRightContainer{
+      height: auto !important;
+    }
+  
+    .bannerBottomDivLeftContainer{
+      height: auto !important;
+    }
+  
+    .bannerImageConztiner{
+      height: auto !important;
+    }
+  
+    .bannerLeftContainer,
+    .bannerRightContainer {
+      width: 100% !important;
+      height: auto;
+    }
+  
+    .bannreBottomDiv {
+      display: block !important;
+    }
+  
+    .bannerBottomDivRightContainer,
+    .bannerBottomDivLeftContainer {
+      width: 100% !important;
+    }  
+    
+    /* wrapper */
+
+  .wrapperMainContainer {
+    width: 95% !important  ;
+  }
+
+    /* about */
+
+    .aboutMainContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .aboutMainLeftContainer {
+      /* background-color: green; */
+      width: 100% !important;
+    }
+
+     /* About leftSide or bottomContainer */
+
+  .aboutRightContainer{
+    /* border: 2px solid green; */
+    width: 100% !important;
+  }
+
+   /* gener Cards */
+
+   /* .topLossessMainContainer{
+    width: 50% !important;
+   }
+
+   .topGainsMainContainer{
+    width: 50% !important;
+   } */
+   .gainersCardsButton1{
+    left: 0px !important;
+  }
+
+  .gainersCardsInnerContainer{
+    padding: 8px !important;
+  }
+
+  .gainersCardButton2{
+    font-weight: 600;
+    justify-content: center!important;
+  }
+
+  /* mainCards */
+
+  .cardMainContainer{
+    /* border: 2px solid red; */
+    flex-direction: column;
+   
+  }
+
+  .cardInnerContainer{
+    /* border: 2px solid green; */
+  }
+
 }
 
 /* responsive Laptop screen max-width  430px */
 
-@media only screen and (max-width: 1400px) {
-  .container {
-    background-color: aqua;
+@media only screen and (max-width: 1030px) {
+    
+  
+  /* wrapper */
+
+.wrapperMainContainer {
+  width: 95% !important  ;
+}
+
+  /* about */
+
+  .aboutMainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  
+  .aboutMainLeftContainer {
+    /* background-color: green; */
+    width: 100% !important;
+  }
+
+   /* About leftSide or bottomContainer */
+
+.aboutRightContainer{
+  /* border: 2px solid green; */
+  width: 100% !important;
+}
+
+ /* gener Cards */
+
+ /* .topLossessMainContainer{
+  width: 50% !important;
+ }
+
+ .topGainsMainContainer{
+  width: 50% !important;
+ } */
+ .gainersCardsButton1{
+  left: 0px !important;
+}
+
+.gainersCardsInnerContainer{
+  padding: 8px !important;
+}
+
+.gainersCardButton2{
+  font-weight: 600;
+  justify-content: center!important;
+}
+ 
 }
 /* responsive Large screen max-width  1450px */
