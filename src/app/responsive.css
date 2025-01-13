@@ -156,24 +156,24 @@
   /* About leftSide or bottomContainer */
 
   .aboutRightContainer{
-    /* border: 2px solid green; */
     width: 100% !important;
   }
+
+  /* adding to make in one block gain or loss card */
+
+  .rightSideBarGainerCardStyle{
+   
+    /* width: 100% !important; */
+    display: flex;
+    flex-direction: column;
+  }
+
  
   /* gener Cards */
-    .gainersCardsButton1{
-      left: 0px !important;
-    }
 
-    .gainersCardsInnerContainer{
-      padding: 8px !important;
-    }
-
-    .gainersCardButton2{
-      font-weight: 600;
-      justify-content: space-around!important;
-    }
-
+ 
+  
+ 
     /* pichart */
 
     .piChartinnerContainer{
@@ -263,9 +263,6 @@
     width: 100% !important;
   }
 
-  .rightSideBarGainerCardStyle{
-    display: flex !important;
-  }
 
    /* gener Cards */
 
@@ -291,10 +288,6 @@
     /* border: 2px solid red; */
     flex-direction: column;
    
-  }
-
-  .cardInnerContainer{
-    /* border: 2px solid green; */
   }
 
 }

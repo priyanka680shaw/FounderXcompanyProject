@@ -2,7 +2,7 @@ import gainersCardStyle from "./gainersStyle.module.css"
 export default function GainersCard({heading , b1 ,b2 ,p1,p2,p3,p4,a}){
     return(
         <>
-            <div className={gainersCardStyle.mainContainer}>
+            <div className={`${gainersCardStyle.mainContainer} gainersCardMainContainer`}>
                 <div className={`${gainersCardStyle.innerContainer} gainersCardsInnerContainer`}>
                     <h1 className={gainersCardStyle.h1} >{heading}</h1>
                     <div className={`${gainersCardStyle.button1} gainersCardsButton1`}>
