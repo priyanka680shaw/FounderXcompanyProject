@@ -4,7 +4,7 @@
     padding: 10px 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     overflow-x: auto; /* Enable horizontal scrolling only */
     white-space: nowrap; /* Prevent wrapping */
     box-sizing: border-box; /* Include padding in the width */

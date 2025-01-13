@@ -7,7 +7,7 @@
   }
 
   .headerTwoStyleSearchBar {
-    width: 300px;
+    width: 300px !important;
   }
 
   .headerTwoStyleHamburg {
@@ -205,8 +205,45 @@
 /* responsive tablet screen max-width  770px */
 
 @media only screen and (max-width: 770px) {
-    /* banner */
 
+  /* header */
+  /* header 2 */
+  .headerTwoStyleMainContainer{
+    /* background-color: aquamarine; */
+    flex-wrap: nowrap;
+  }
+
+  
+  .headerTwoStyleSearchBar {
+    width: 350px!important;
+    padding: 2px 20px !important;
+  }
+  
+  .searchBarIcon{
+    font-size: 40px !important;
+  }
+  .mobileLogo{
+    display: flex !important;
+    width: 50px;
+  }
+
+  .desktopLogo{
+    display: none;
+  }
+
+  .headerTwoSBtnStyle{
+    padding: 5px !important;
+    margin-left: 8px;
+    font-size: 14px !important;
+    
+  }
+
+    /* header 3 */
+
+    .headerThreeMainContainer{
+      justify-content: space-between !important;
+    }
+    /* banner */
     .bannerMainContainer {
       display: block !important ;
     }
@@ -263,24 +300,28 @@
     width: 100% !important;
   }
 
+/* adding to make in one block gain or loss card */
+.rightSideBarGainerCardStyle{
+  display: flex !important;
+}
+ /* gener Cards */
 
-   /* gener Cards */
+ .topGainMainContainer , .topLossMainContainer{
+  width: 50% !important;
+}
+.gainersCardsButton1{
+left: 0px !important;
+}
 
-  .topGainMainContainer , .topLossMainContainer{
-    width: 50% !important;
-  }
-   .gainersCardsButton1{
-    left: 0px !important;
-  }
+.gainersCardsInnerContainer{
+padding: 8px !important;
+}
 
-  .gainersCardsInnerContainer{
-    padding: 8px !important;
-  }
+.gainersCardButton2{
+font-weight: 600;
+justify-content: center!important;
+}
 
-  .gainersCardButton2{
-    font-weight: 600;
-    justify-content: center!important;
-  }
 
   /* mainCards */
 
@@ -294,7 +335,45 @@
 
 /* responsive Laptop screen max-width  1030px */
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1030px) and (min-width : 770px) {
+
+   /* header */
+  /* header 2 */
+  .headerTwoStyleMainContainer{
+    /* background-color: aquamarine; */
+    flex-wrap: nowrap;
+  }
+
+  
+  .headerTwoStyleSearchBar {
+      width: 550px!important;
+    padding: 2px 20px !important;
+  }
+  
+  .searchBarIcon{
+    font-size: 40px !important;
+  }
+  .mobileLogo{
+    display: flex !important;
+    width: 50px;
+  }
+
+  .desktopLogo{
+    display: none;
+  }
+
+  .headerTwoSBtnStyle{
+    /* padding: px !important; */
+    margin-left: 8px;
+    font-size: 14px !important;
+    
+  }
+
+    /* header 3 */
+
+    .headerThreeMainContainer{
+      justify-content: space-between !important;
+    }               
     
   /* banner */
 

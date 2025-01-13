@@ -12,7 +12,7 @@ export default function HeaderThree(){
         <>
         <div style={{ width  :"100%" , display : "flex" , justifyContent : "center" }}>
             <Wrapper>
-                <div className= {headerThreeStyle.mainContainer}>
+                <div className= {`${headerThreeStyle.mainContainer} headerThreeMainContainer`} >
                    <ul>
                     {
                         menuLists.map((items , index)=>{

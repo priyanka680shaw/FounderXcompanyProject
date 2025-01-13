@@ -1,24 +1,31 @@
 .mainContainer {
     width: 100%;
-    padding: 15px 10px;
+    padding: 7px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* border: 2px solid black; */
+    /* border: 2px solid rgb(186, 26, 26); */
 }
 
-.logo{
+.logoContainer{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+    /* border: 2px solid red; */
 }
 
+.mobileLogo{
+    display: none;
+}
+
+.desktopLogo{
+
+}
 /* .hamburg{
     display: none;
 } */
-
 
 .searchIcon {
     font-weight: bold;
