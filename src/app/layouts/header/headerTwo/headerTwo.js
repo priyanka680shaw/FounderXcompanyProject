@@ -1,3 +1,4 @@
+'use client'
 import Wrapper from "../../wrapper/wrapper";
 import headerTwoStyle from './headerTwo.module.css';
 import logoImage from "../../../images/logo.png"
@@ -6,8 +7,16 @@ import Image from "next/image";
 import { TiThMenu } from "react-icons/ti";
 //importing search icon from react icons
 import { CiSearch } from "react-icons/ci";
+import Mobilemenu from "@/app/components/mobileMenu/mobileMenu";
+import { useState } from "react";
 export default function HeaderTwo() {
 
+    const [mobileMenu , setMobileMenu] = useState(false)
+      
+    function displayMenu(){
+        console.log(mobileMenu)
+        setMobileMenu(((prev)=> !prev))
+    }
     return (
         <>
             <Wrapper>
@@ -15,7 +24,7 @@ export default function HeaderTwo() {
                     <div className={`${headerTwoStyle.logoContainer} headerTwoStyleLogo` }>
                         <Image src={mobileLogo} alt="mobileLogo" className={`${headerTwoStyle.mobileLogo} mobileLogo`}></Image>
                         <Image src={logoImage} alt="founderlogo" style={{cursor : "pointer"}} className= {`${headerTwoStyle.desktopLogo} desktopLogo`}></Image>
-                        {/* <TiThMenu className={`${headerTwoStyle.hamburg} headerTwoStyleHamburg `}/> */}
+                        <TiThMenu className={`${headerTwoStyle.hamburg} headerTwoStyleHamburg `} onClick={displayMenu}/>
                     </div>
                     <div className= {`${headerTwoStyle.searchBar} headerTwoStyleSearchBar `}>
                         <input type="text" placeholder="Search  Stock , Quotes , News , Mutual Funds and more ..." className={`${headerTwoStyle.searchInput} headerTwoStyleSearchInput`}/>
@@ -26,6 +35,12 @@ export default function HeaderTwo() {
                         <button className= {`${headerTwoStyle.btnStyle} headerTwoSBtnStyle`} style={{border : "2px solid blue" , backgroundColor : "blue"}}>Singup</button>
                         <button className= {`${headerTwoStyle.btnStyle} headerTwoSBtnStyle`} style={{border : "2px solid rgb(216,9,27)" ,  backgroundColor : "rgb(216,9,27)"}}>Suscribe</button>
                     </div>
+                    { mobileMenu &&
+                        //  <div>
+                         <Mobilemenu setMobileMenu = {setMobileMenu} mobileMenu = {mobileMenu}/>  
+                        //  </div>
+                    }
+                   
             </div>           
             <hr style={{ border: "1px solid rgb(218, 214, 214)", margin: "0px" , width : "100%" }} />
             <hr style={{ border: "1px solid rgb(218, 214, 214)", margin: "2px 0px" , width : "100%" }} />

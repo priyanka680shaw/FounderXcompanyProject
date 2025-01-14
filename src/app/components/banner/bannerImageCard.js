@@ -12,15 +12,15 @@ export default function BannerImageCard({height , image , headingText , btnColor
       const updateFontSize = () => {
         const screenWidth = window.innerWidth;
         if (screenWidth <= 321) {
-          setResponsiveFontSize("4px"); // Adjust font size for small screens
+          setResponsiveFontSize("14px"); // Adjust font size for small screens
         } else if (screenWidth <= 768) {
           setResponsiveFontSize("20px"); // Adjust font size for medium screens
         } 
        else if (screenWidth <= 1024) {
-        setResponsiveFontSize("20px"); // Adjust font size for medium screens
+        setResponsiveFontSize("25px"); // Adjust font size for medium screens
       }
       else if (screenWidth <= 1440) {
-        setResponsiveFontSize("30px"); // Adjust font size for medium screens
+        setResponsiveFontSize("25px"); // Adjust font size for medium screens
       }else {
           setResponsiveFontSize(fontSize); // Default font size for larger screens
         }

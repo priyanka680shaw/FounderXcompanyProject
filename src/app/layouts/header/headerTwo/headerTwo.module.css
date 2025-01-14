@@ -9,10 +9,12 @@
 }
 
 .logoContainer{
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-items: center;
+    position: relative;
     /* border: 2px solid red; */
 }
 
@@ -20,12 +22,12 @@
     display: none;
 }
 
-.desktopLogo{
+
+.hamburg{
+    display: none ;
+    font-size: 30px;
 
 }
-/* .hamburg{
-    display: none;
-} */
 
 .searchIcon {
     font-weight: bold;

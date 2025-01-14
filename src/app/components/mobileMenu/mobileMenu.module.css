@@ -1,0 +1,64 @@
+
+.mainContainer{
+    /* border: 2px solid rgb(25, 27, 25); */
+      background-color: rgb(238, 234, 241);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    padding-bottom: 30px;
+}
+
+.btnStyle {
+    border: 2px solid black;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px; /* Fixed unit */
+ 
+   }
+
+   .logoContainer{
+    width: 100%;
+    height: 60px;
+    /* background-color: aliceblue; */
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   }
+
+   .crossButton{
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+   }
+
+   .searchIcon {
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(69, 67, 67);
+    /* color: rgb(218, 214, 214); */
+    gap: 1rem;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.searchInput {
+    outline: none;
+    width: 550px;
+    padding: 8px;
+    font-size: small;
+    transition: border-color 0.3s ease-in;
+}

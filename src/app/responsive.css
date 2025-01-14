@@ -4,10 +4,12 @@
   /* header */
   .headerTwoStyleMainContainer {
     display: block;
+    position: relative !important;
+    /* border: 2px solid green !important; */
   }
 
   .headerTwoStyleSearchBar {
-    width: 300px !important;
+    display: none !important;
   }
 
   .headerTwoStyleHamburg {
@@ -18,16 +20,12 @@
     display: none;
   }
 
-  .headerTwoStyleMainContainer {
-    display: none;
-    background-color: rgb(152, 152, 169);
+
+  .headerTwoStyleHamburg{
+      display: flex !important;
   }
 
   .userAccess {
-    display: none;
-  }
-
-  .headerTwoStyleSearchBar {
     display: none;
   }
 
@@ -35,9 +33,12 @@
     display: none;
   }
 
-  .headerTwoStyleSearchBar {
-    display: none;
-  }
+ .headerTwoStyleLogo{
+  width: 100% !important;
+ }
+
+
+
 /* rightside or topContainer */
 
 
@@ -393,10 +394,6 @@ justify-content: center!important;
     height: auto !important;
   }
 
-  .bannerImageConztiner{
-    /* height: auto !important; */
-  }
-
   .bannerLeftContainer,
   .bannerRightContainer {
     width: 100% !important;
@@ -453,3 +450,29 @@ justify-content: center!important;
  
 }
 /* responsive Large screen max-width  1450px */
+
+@media only screen and (max-width : 1450px){
+  /* banner */
+
+  .bannerMainContainer {
+    display: block !important ;
+  }
+
+ .bannerRightContainerTopContainer {
+    height: auto !important;
+  }
+
+  .bannerBottomDivRightContainer{
+    height: auto !important;
+  }
+
+  .bannerBottomDivLeftContainer{
+    height: auto !important;
+  }
+
+  .bannerLeftContainer,
+  .bannerRightContainer {
+    width: 100% !important;
+    height: auto;
+  }
+}
